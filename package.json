@@ -1,6 +1,6 @@
 {
   "name": "@nielsendigital/middlewares",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "TypeScripted middlewares for express.js",
   "prettier": "@nielsendigital/prettier-config",
   "main": "./build/index.js",
