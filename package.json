@@ -1,0 +1,47 @@
+{
+  "name": "@nielsendigital/middlewares",
+  "version": "1.0.0",
+  "description": "TypeScripted middlewares for express.js",
+  "prettier": "@nielsendigital/prettier-config",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "clean": "del ./build/*",
+    "build": "npm run clean && tsc",
+    "pub": "npm version patch && npm run build && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjn/middlewares.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "middlewares",
+    "expressJs"
+  ],
+  "author": "Will Nielsen",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/wjn/middlewares/issues"
+  },
+  "homepage": "https://github.com/wjn/middlewares#readme",
+  "devDependencies": {
+    "@nielsendigital/prettier-config": "^1.0.0",
+    "del-cli": "^3.0.1",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "@nielsendigital/errors": "^1.0.2",
+    "@nielsendigital/logit": "^1.0.2",
+    "@types/cookie-session": "^2.0.42",
+    "@types/express": "^4.17.11",
+    "@types/jsonwebtoken": "^8.5.0",
+    "cookie-session": "^1.4.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.9.2",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
